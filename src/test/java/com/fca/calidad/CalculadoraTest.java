@@ -53,13 +53,13 @@ public class CalculadoraTest {
 		//Verificar
 		assertThat(resultadoEsperado,equalTo(resultadoEjecucion));
 	}
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void divideCeroTest() {
 		//Llamar al código
-		float resultadoEsperado = 0;
-		float resultadoEjecucion = miCalculadora.multiplica(5,0);
+		
+		float resultadoEjecucion = miCalculadora.divide(5,0);
 		//Verificar
-		assertThat(resultadoEsperado, equalTo(resultadoEjecucion));
+		System.out.println("Ejecutando división entre cero!");
 		
 	}
 	
@@ -67,7 +67,7 @@ public class CalculadoraTest {
 	public void divideIgualesTest() {
 		//Llamar al código
 		float resultadoEsperado = 1;
-		float resultadoEjecucion = miCalculadora.multiplica(5,5);
+		float resultadoEjecucion = miCalculadora.divide(5,5);
 	
 		//Verificar
 		assertThat(resultadoEsperado,equalTo(resultadoEjecucion));
