@@ -60,7 +60,6 @@ public class CalculadoraTest {
 		float resultadoEjecucion = miCalculadora.divide(5,0);
 		//Verificar
 		System.out.println("Ejecutando división entre cero!");
-		
 	}
 	
 	@Test
