@@ -7,6 +7,7 @@ public interface AlumnoDAO {
 	public void removeAlumno(Alumno alumno);
 	public void updateAlumnoPromedio(Alumno alumno, Float promedio);
 	public String getAlumnoName(String id);
+	public Alumno getAlumno(String id);
 	public HashMap<String, Alumno> getAllAlumno();
 	
 }

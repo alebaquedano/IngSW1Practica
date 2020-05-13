@@ -31,6 +31,10 @@ public class AlumnoDAOHashMap implements AlumnoDAO{
 		// TODO Auto-generated method stub
 		return dbAlumnos;
 	}
+	public Alumno getAlumno(String id)
+	{
+	return dbAlumnos.get(id);
+	}
 
 	
 }
