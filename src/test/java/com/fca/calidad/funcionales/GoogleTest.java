@@ -32,7 +32,7 @@ public class GoogleTest{
     driver.findElement(By.id("tsf")).submit();
     driver.findElement(By.xpath("//div[@id='rso']/div/div/div/div[2]/div")).click();
     driver.findElement(By.xpath("//div[@id='rso']/div/div/div/div/a/h3")).click();
-    assertEquals("https://mx.hola.com/", driver.getCurrentUrl());
+    assertEquals("https://mx.hola.com/", driver.getCurrentUrl());//Prueba
   }
 
   @After
