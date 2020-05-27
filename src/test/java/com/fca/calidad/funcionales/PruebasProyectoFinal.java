@@ -17,8 +17,9 @@ public class PruebasProyectoFinal {
 
   @Before
   public void setUp() throws Exception {
-	  System.setProperty("webdriver.chrome.driver","/Users/Admin2/Documents/ChromeDriver/chromedriver.exe");
-    driver = new ChromeDriver();
+    
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Documents\\calidadDeSoftware\\chromedriver.exe");
+	driver = new ChromeDriver();
     baseUrl = "https://mern-crud.herokuapp.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
